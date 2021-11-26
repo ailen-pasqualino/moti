@@ -11,10 +11,10 @@
 
     <title>Nueva emoción</title>
 </head>
-<body>
+<body class="body-scroll">
     <div class="container">
         <header>
-            <a href="./log-empty.html" aria-label="Volver" class="text-dark">
+            <a href="./log-empty.html" aria-label="Salir" class="text-dark">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#212529" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="18" y1="6" x2="6" y2="18" />
@@ -25,28 +25,29 @@
 
         <main>
             <h1>¿Qué emoción sentís que más te representa en este momento?</h1>
+            <p class="required">Seleccioná una opción</p>
 
             <div class="emotion-options container">
-                <form method="get" action="./log.html">
+                <form method="get" action="./notes.html">
                     <fieldset>
                         <ul>
                             <div class="row">
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="hapiness" autocomplete="off" aria-label="Felicidad" required>
-                                    <label class="btn btn-outline-primary tag" for="hapiness">
-                                    <img src="/img/emotion/felicidad.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="hapiness" aria-hidden="true">
+                                    <img src="../img/emotion/felicidad.png" alt="">
                                     Felicidad</label>
                                 </li>
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="sadness" autocomplete="off" aria-label="Tristeza">
-                                    <label class="btn btn-outline-primary tag" for="sadness">
-                                    <img src="/img/emotion/tristeza.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="sadness" aria-hidden="true">
+                                    <img src="../img/emotion/tristeza.png" alt="">
                                     Tristeza</label>
                                 </li>
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="madness" autocomplete="off" aria-label="Locura">
-                                    <label class="btn btn-outline-primary tag" for="madness">
-                                    <img src="/img/emotion/locura.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="madness" aria-hidden="true">
+                                    <img src="../img/emotion/locura.png" alt="">
                                     Locura</label>
                                 </li>
                             </div> <!-- /fist row -->
@@ -54,20 +55,20 @@
                             <div class="row">
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="stress" autocomplete="off" aria-label="Estrés">
-                                    <label class="btn btn-outline-primary tag" for="stress">
-                                    <img src="/img/emotion/estres.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="stress" aria-hidden="true">
+                                    <img src="../img/emotion/estres.png" alt="">
                                     Estrés</label>
                                 </li>
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="motivation" autocomplete="off" aria-label="Motivación">
-                                    <label class="btn btn-outline-primary tag" for="motivation">
-                                    <img src="/img/emotion/motivacion.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="motivation" aria-hidden="true">
+                                    <img src="../img/emotion/motivacion.png" alt="">
                                     Motivación</label>
                                 </li>
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="fury" autocomplete="off" aria-label="Enojo">
-                                    <label class="btn btn-outline-primary tag" for="fury">
-                                    <img src="/img/emotion/enojo.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="fury" aria-hidden="true">
+                                    <img src="../img/emotion/enojo.png" alt="">
                                     Enojo</label>
                                 </li>
                             </div> <!-- /second row -->
@@ -75,20 +76,20 @@
                             <div class="row">
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="love" autocomplete="off" aria-label="Amor">
-                                    <label class="btn btn-outline-primary tag" for="love">
-                                    <img src="/img/emotion/amor.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="love" aria-hidden="true">
+                                    <img src="../img/emotion/amor.png" alt="">
                                     Amor</label>
                                 </li>
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="neutral" autocomplete="off" aria-label="Neutral">
-                                    <label class="btn btn-outline-primary tag" for="neutral">
-                                    <img src="/img/emotion/neutral.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="neutral" aria-hidden="true">
+                                    <img src="../img/emotion/neutral.png" alt="">
                                     Neutral</label>
                                 </li>
                                 <li class="col">
                                     <input type="radio" name="emotions" class="btn-check" id="frustration" autocomplete="off" aria-label="Frustración">
-                                    <label class="btn btn-outline-primary tag" for="frustration">
-                                    <img src="/img/emotion/frustracion.png" alt="">
+                                    <label class="btn btn-outline-primary tag" for="frustration" aria-hidden="true">
+                                    <img src="../img/emotion/frustracion.png" alt="">
                                     Frustración</label>
                                 </li>
                             </div> <!-- /third row -->

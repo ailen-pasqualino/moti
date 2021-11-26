@@ -21,8 +21,8 @@
                     <line x1="5" y1="12" x2="11" y2="18" />
                     <line x1="5" y1="12" x2="11" y2="6" />
                 </svg> 
-                Bitácora de emociones
             </a>
+            <p>Bitácora de emociones</p>
         </header> <!-- /header -->
 
         <main>
@@ -36,59 +36,268 @@
                 <div class="calendar-controls d-flex justify-content-between align-items-center">
                     <p>Noviembre 2021</p>
                     <div class="calendar-switch">
-                        <a href="" class="active">semana</a>
-                        <a href="">mes</a>
+                        <button type="button" id="week" class="active">semana</button>
+                        <button type="button" id="month">mes</button>
                     </div>
                 </div>
-                <ul class="row days d-flex">
-                    <li class="col">
-                        <a href="" aria-current="page" aria-label="Domingo 14" class="active">
-                            <span aria-hidden="true" class="day-name">D</span>
-                            14
-                        </a>
-                    </li>
-                    <li class="col">
-                        <a href="" aria-label="Lunes 15">
-                            <span class="day-name" aria-hidden="true">L</span>
-                            15
-                        </a>
-                    </li>
-                    <li class="col">
-                        <a href="" aria-label="Martes 16">
-                            <span class="day-name" aria-hidden="true">M</span>
-                            16                        </a>
-                    </li>
-                    <li class="col">
-                        <a href="" aria-label="Miércoles 17">
-                            <span class="day-name" aria-hidden="true">M</span>
-                            17
-                        </a>
-                    </li>
-                    <li class="col">
-                        <a href="" aria-label="Jueves 18">
-                            <span class="day-name" aria-hidden="true">J</span>
-                            18                        </a>
-                    </li>
-                    <li class="col">
-                        <a href="" aria-label="Viernes 19">
-                            <span class="day-name" aria-hidden="true">V</span>
-                            19
-                        </a>
-                    </li>
-                    <li class="col">
-                        <a href="" aria-label="Sábado 20">
-                            <span class="day-name" aria-hidden="true">S</span>
-                            20
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                <nav aria-label="Calendario" aria-live="polite">
+                    <ul id="calendar-week" aria-label="Semana del 22" class="days">
+                        <div class="row d-flex">
+                            <li class="col">
+                                <a href="" aria-label="Domingo 14">
+                                    <span aria-hidden="true" class="day-name">D</span>
+                                    22
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="" aria-label="Lunes 15">
+                                    <span class="day-name" aria-hidden="true">L</span>
+                                    23
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="" aria-label="Martes 16">
+                                    <span class="day-name" aria-hidden="true">M</span>
+                                    16
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="" aria-label="Miércoles 17">
+                                    <span class="day-name" aria-hidden="true">M</span>
+                                    24
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="" aria-label="Jueves 18">
+                                    <span class="day-name" aria-hidden="true">J</span>
+                                    25
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="" aria-label="Viernes 19">
+                                    <span class="day-name" aria-hidden="true">V</span>
+                                    26
+                                </a>
+                            </li>
+                            <li class="col">
+                                <a href="" aria-current="page" class="active" aria-label="Sábado 20">
+                                    <span class="day-name" aria-hidden="true">S</span>
+                                    27
+                                    <span class="challenge-number" aria-label="1 emoción">1</span>
+                                </a>
+                            </li>
+                        </div> <!-- /row -->
+                    </ul> <!-- /calendar-week -->
+                </nav>
+
+                <ul id="calendar-month" class="days d-none" aria-label="Mes de Noviembre">
+                    <div class="row d-flex">
+                        <li class="col">
+                            <a aria-label="Domingo 31" data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge">
+                                <span aria-hidden="true" class="day-name">D</span>
+                                31
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Lunes 1">
+                                <span class="day-name" aria-hidden="true">L</span>
+                                1
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Martes 2">
+                                <span class="day-name" aria-hidden="true">M</span>
+                                2
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Miércoles 3">
+                                <span class="day-name" aria-hidden="true">M</span>
+                                3
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Jueves 4">
+                                <span class="day-name" aria-hidden="true">J</span>
+                                4
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Viernes 5">
+                                <span class="day-name" aria-hidden="true">V</span>
+                                5
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Sábado 6">
+                                <span class="day-name" aria-hidden="true">S</span>
+                                6
+                            </a>
+                        </li>
+                    </div> <!-- /row -->
+                    <div class="row d-flex">
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Domingo 7">
+                                7
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Lunes 8">
+                                8
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Martes 9" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                9
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Miércoles 10">
+                                10
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Jueves 11" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                11
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Viernes 12">
+                                12
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Sábado 13">
+                                13
+                            </a>
+                        </li>
+                    </div> <!-- /row -->
+                    <div class="row d-flex">
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Domingo 14">
+                                14
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Lunes 15">
+                                15
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Martes 16" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                16
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Miércoles 17">
+                                17
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Jueves 18" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                18
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Viernes 19">
+                                19
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Sábado 20">
+                                20
+                            </a>
+                        </li>
+                    </div> <!-- /row -->
+                    <div class="row d-flex">
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Domingo 21">
+                                21
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Lunes 22">
+                                22
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Martes 23" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                23
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Miércoles 24">
+                                24
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Jueves 25" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                25
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Viernes 26">
+                                26
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-no-challenge" aria-current="page" class="active" aria-label="Sábado 27">
+                                27
+                                <span class="challenge-number" aria-label="1 emoción">1</span>
+                            </a>
+                        </li>
+                    </div> <!-- /row -->
+                    <div class="row d-flex">
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Domingo 28">
+                                28
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button"
+                            aria-controls="modal-no-challenge" aria-label="Lunes 29">
+                                29
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Martes 30" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                30
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Miércoles 1">
+                                1
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a aria-label="Jueves 2" data-bs-toggle="offcanvas" href="#modal-challenge" role="button" aria-controls="modal-challenge">
+                                2
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Viernes 3">
+                                3
+                            </a>
+                        </li>
+                        <li class="col">
+                            <a data-bs-toggle="offcanvas" href="#modal-no-challenge" role="button" aria-controls="modal-no-challenge" aria-label="Sábado 4">
+                                4
+                            </a>
+                        </li>
+                    </div> <!-- /row -->
+                </ul> <!-- /calendar-month -->
+            </section> <!-- calendar -->
+
+            <div class="tip-container motivation d-flex">
+                <img src="../img/motivation-icon.png" alt="">
+                <p class="align-self-center">¡Esa es la actitud! La motivación es clave para lograr tus objetivos.</p>
+            </div> <!-- /motivation-tip -->
 
             <section id="emotions-log" aria-labelledby="emotions-day">
                 <h2 id="emotions-day">Tus emociones del día</h2>
 
                 <ul class="emotions-list">
-                    <li class="d-flex">
+                    <li class="d-flex d-none">
                         <p class="time">09:00 hs</p>
                         <div class="emotion">
                             <h3><span>&#129321;</span> Motivación</h3>
@@ -116,110 +325,49 @@
 
     </div> <!-- /container -->
 
-<!-- Modal -->
-<div class="modal fade" id="emoji-modal" tabindex="-1" aria-labelledby="emoji-modal-label" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="emoji-modal-label">Seleccioná el emoji que represente tu desafío</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div> <!-- /modal-header -->
+    <!-- MODAL - "Todavía no tenés desafíos" -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="modal-no-challenge" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Todavía no tenés emociones registradas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="challenge-list">
+                <li>
+                    <a href="./new-emotion.html" class="challenge d-flex justify-content-between">
+                        <h3>Nueva emoción</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#212529" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /"Todavía no tenés desafíos" -->
 
-            <div class="modal-body">  
-                <form action="">
-                    <ul class="emoji-list">
-                        <div class="emoji-row d-flex">
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-1" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-1">&#129496;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-2" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-2">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-3" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-3">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-4" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-4">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-5" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-5">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-6" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-6">&#128205;</label>
-                            </li>
-                        </div> <!-- /emoji-row -->
-                        <div class="emoji-row d-flex">
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-7" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-7">&#129496;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-8" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-8">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-9" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-9">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-10" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-10">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-11" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-11">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-12" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-12">&#128205;</label>
-                            </li>
-                        </div> <!-- /emoji-row -->
-                        <div class="emoji-row d-flex">
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-13" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-13">&#129496;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-14" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-14">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-15" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-15">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-16" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-16">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-17" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-17">&#128205;</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="options-outlined" id="emoji-18" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="emoji-18">&#128205;</label>
-                            </li>
-                        </div> <!-- /emoji-row -->
-                    </ul>
-                </form> <!-- /form -->
-            </div> <!-- /modal-body -->
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Agregar emoji</button>
-            </div> <!-- /modal-footer -->
-
-        </div> <!-- /modal-content -->
-    </div> <!-- /modal-dialog -->
-</div> <!-- /modal -->
+    <!-- MODAL - "1 desafío en progreso" -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="modal-challenge" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Tus emociones del día</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="emotions-list">
+                <li class="d-flex">
+                    <p class="time">09:00 hs</p>
+                    <div class="emotion">
+                        <h3><span>&#129321;</span> Motivación</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /"1 desafío en progreso" -->
     
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html> 

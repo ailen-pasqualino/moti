@@ -14,7 +14,14 @@
 <body>
     <div class="container">
         <header>
-            <a href="" aria-label="Volver" class="text-dark"><img src="/img/icon/arrow-left.svg" aria-hidden="true" alt=""> </a>
+            <a href="./new-emotion.html" aria-label="Volver" class="text-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#212529" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="5" y1="12" x2="11" y2="18" />
+                    <line x1="5" y1="12" x2="11" y2="6" />
+                </svg> 
+            </a>
         </header> <!-- /header -->
 
         <main>
@@ -26,14 +33,16 @@
 
             <div class="row step-content">
                 <div class="col padding-none">
-                    <form>
+                    <form method="get" action="./log.html">
                         <fieldset id="notes">
                             <label for="notes" class="form-label">Notas (opcional)</label>
                             <textarea class="form-control" id="notes" rows="3" aria-describedby="notesHelp"></textarea>
                             <div id="notesHelp" class="form-text">Debe tener 200 caracteres como máximo.</div>
                         </fieldset>
   
-                        <button type="submit" class="btn btn-primary step-button">Añadir emoción</button>
+                        <div class="step-button-container">
+                            <button type="submit" id="send" class="btn btn-primary step-button">Añadir emoción</button>
+                        </div>
                     </form> <!-- /form -->
                 </div>
             </div> <!-- /step-content row -->
