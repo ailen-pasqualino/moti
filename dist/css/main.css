@@ -9,7 +9,7 @@ fieldset {
 
 .required {
   font: 400 0.9rem "Inter", sans-serif;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   margin-top: 1.5rem;
 }
 
@@ -100,7 +100,7 @@ input[type=radio] {
 }
 
 #challenge-days .helptext {
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
 }
 
 #reminder label {
@@ -207,7 +207,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 
 .step-name {
   font-size: 0.88rem;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -437,7 +437,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 
 #calendar ul a .day-name {
   font: 400 0.9rem "Inter", sans-serif;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   margin-bottom: 1rem;
   display: block;
 }
@@ -478,7 +478,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 
 #challenges p {
   font: 400 1rem "Inter", sans-serif;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
 }
 
 #challenges .card-listado {
@@ -560,7 +560,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 }
 
 .emotions-list li .emotion .note {
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   margin-top: 0.5rem;
 }
 
@@ -642,6 +642,10 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
   border: 1px solid var(--bs-gray-300);
 }
 
+#challenge #info .info-item-title {
+  margin-bottom: 1rem;
+}
+
 #challenge #info .info-item:not(:last-child) {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -653,7 +657,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 
 #challenge #info .challenge-tags p {
   padding: 0.25rem 0.5rem;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   border: 1px solid var(--bs-gray-300);
   border-radius: 0.25rem;
   margin-right: 0.5rem;
@@ -693,7 +697,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
   text-align: left;
 }
 
-#challenge form #challenge-name {
+#challenge form .challenge-name {
   text-align: center;
   font: 500 1.75rem "Inter", sans-serif;
 }
@@ -765,7 +769,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 }
 
 #stats .stats-section#challenges li .title p {
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   margin-left: 0.5rem;
 }
 
@@ -779,7 +783,7 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 
 #stats .stats-section#challenges li .description {
   font: 400 0.9rem "Inter", sans-serif;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
 }
 
 #stats .stats-section#emotions li {
@@ -839,6 +843,101 @@ btn:focus, .btn-outline-primary:focus, .btn-outline-primary:hover {
 
 #stats .motivation {
   margin: 2rem 0;
+}
+
+body.onboarding header {
+  padding: 2rem body.onboarding header size-medium;
+}
+
+body.onboarding header a {
+  margin-right: 5rem;
+}
+
+body.onboarding header .logo {
+  height: 3rem;
+}
+
+body.onboarding header img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+body.onboarding header p {
+  font: 500 1.15rem "Inter", sans-serif;
+  color: white;
+}
+
+body.onboarding h1 {
+  font: italic 400 1.5rem "Inter", sans-serif;
+  margin-bottom: 1.5rem !important;
+  text-align: center;
+}
+
+body.onboarding p {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+body.onboarding p p .highlight {
+  font-size: 2.8rem !important;
+}
+
+body.onboarding .step-button-container {
+  background-color: transparent;
+  text-align: end;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding: 0 3rem 2rem 3rem;
+}
+
+body.onboarding .step-button-container a {
+  color: white;
+  font: 400 1rem "Inter", sans-serif;
+  text-decoration: none;
+}
+
+body.onboarding .final-step {
+  background-color: transparent;
+  padding: 1rem;
+}
+
+body.onboarding .final-step a {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #5551FF;
+  border-radius: 0.25rem;
+  color: white;
+  padding: 0.75rem 1rem;
+  -webkit-filter: drop-shadow(0px 16px 48px rgba(85, 81, 255, 0.25));
+          filter: drop-shadow(0px 16px 48px rgba(85, 81, 255, 0.25));
+}
+
+body.onboarding .onboarding-background-1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1030;
+  width: 60%;
+  height: auto;
+}
+
+body.onboarding .onboarding-background-2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1030;
+  height: 40%;
+  width: auto;
+}
+
+body.onboarding .onboarding-background-3 {
+  position: fixed;
+  bottom: 0;
+  left: 1.5rem;
+  z-index: -1030;
+  height: 45%;
+  width: auto;
 }
 
 .margin-none {
@@ -913,7 +1012,7 @@ ul li {
 
 .badge.optional {
   background-color: var(--bs-gray-100);
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem;
@@ -963,7 +1062,7 @@ header p {
 .no-data p {
   width: 60%;
   text-align: center;
-  color: var(--bs-gray-600);
+  color: var(--bs-gray-700);
   margin: 1.5rem auto 0 auto;
 }
 
