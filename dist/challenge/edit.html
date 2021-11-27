@@ -33,10 +33,10 @@
                         &#129496;
                     </button>
 
-                    <form method="GET" action="">
+                    <form method="GET" action="./info-modified.html">
                         <fieldset>
-                            <label for="challenge-name" class="form-label d-none">Nombre</label>
-                            <input type="text" class="form-control" value="Yoga Semanal"  id="challenge-name" aria-describedby="nameHelp" required>
+                            <label id="challenge-name" class="form-label d-none">Nombre</label>
+                            <input type="text" aria-labelledby="challenge-name" class="form-control challenge-name" value="Yoga Semanal"  aria-describedby="nameHelp" required>
                             <div id="nameHelp" class="form-text">Debe tener 30 caracteres como máximo.</div>
                         </fieldset> <!-- /name -->
 
@@ -57,7 +57,7 @@
                                     <label aria-hidden="true" class="btn btn-outline-primary tag" for="lunes">L</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" class="btn-check" id="martes" autocomplete="off" aria-label="Martes">
+                                    <input type="checkbox" class="btn-check" id="martes" autocomplete="off" aria-label="Martes" checked>
                                     <label aria-hidden="true" class="btn btn-outline-primary tag" for="martes">M</label>
                                 </li>
                                 <li>
@@ -65,7 +65,7 @@
                                     <label aria-hidden="true" class="btn btn-outline-primary tag" for="miercoles">M</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" class="btn-check" id="jueves" autocomplete="off" aria-label="Jueves">
+                                    <input type="checkbox" class="btn-check" id="jueves" autocomplete="off" aria-label="Jueves" checked>
                                     <label aria-hidden="true" class="btn btn-outline-primary tag" for="jueves">J</label>
                                 </li>
                                 <li>
@@ -73,31 +73,29 @@
                                     <label aria-hidden="true" class="btn btn-outline-primary tag" for="viernes">V</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" class="btn-check" id="sabado" autocomplete="off" aria-label="Sábado">
+                                    <input type="checkbox" class="btn-check" id="sabado" autocomplete="off" aria-label="Sábado" checked>
                                     <label aria-hidden="true" class="btn btn-outline-primary tag" for="sabado">S</label>
                                 </li>
                             </ul> <!-- /tag-row -->
-                            <p class="helptext">Domingo</p>
                         </fieldset> <!-- /days -->
 
                         <fieldset>
                             <label for="challenge-end" class="form-label">Fecha de finalización</label>
-                            <input type="date" class="form-control" id="challenge-end" aria-describedby="nameHelp" required>
-                            <div id="nameHelp" class="form-text">Debe tener 30 caracteres como máximo.</div>
+                            <input type="date" value="2021-12-27" class="form-control" id="challenge-end" aria-describedby="nameHelp" required>
                         </fieldset> <!-- /end -->
 
                         <div class="tip-container d-flex">
                             <img src="../img/tip-icon.png" class="tip-icon" alt="">
-                            <p class="text-start">Sincronizá el desafío con tu calendario para un mejor seguiemiento.</p>
+                            <p class="text-start">Sincronizá el desafío con tu calendario para un mejor seguimiento.</p>
                         </div> <!-- /tip -->
 
                         <fieldset id="reminder-time">
                             <div class="form-switch align-items-center justify-content-between d-flex">
                                 <label class="form-check-label" for="add-calendar">Recibir recordatorios</label>
-                                <input class="form-check-input" type="checkbox" role="switch" id="add-calendar">
+                                <input class="form-check-input" type="checkbox" role="switch" id="add-calendar" checked>
                             </div>
                             <label for="challenge-time" class="form-label">Elegir horario</label>
-                            <input type="time" class="form-control" id="challenge-time" aria-describedby="nameHelp" required>
+                            <input type="time" value="18:30" class="form-control" id="challenge-time" required>
                         </fieldset>
 
                         <div class="step-button-container">
